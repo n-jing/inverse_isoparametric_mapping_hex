@@ -4,8 +4,8 @@ if (NOT DOXYGEN_FOUND)
     "Doxygen is needed to build the documentation. Please install it correctly")
 endif()
 
-set(doc_inc_file ${PROJECT_SOURCE_DIR}/inc)
-set(doc_src_file ${PROJECT_SOURCE_DIR}/src)
+set(doc_inc_file ${PROJECT_SOURCE_DIR})
+set(doc_src_file ${PROJECT_SOURCE_DIR})
 set(readme ${PROJECT_SOURCE_DIR}/README.md)
 configure_file(Doxyfile
   ${PROJECT_BINARY_DIR}/Doxyfile  @ONLY IMMEDIATE)
